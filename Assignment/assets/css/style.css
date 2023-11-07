@@ -1,0 +1,187 @@
+/* 
+  Template Name: Frontend Intern Task
+  Author: Arnob Das Dipto
+  Description: Using HTML3, CSS3, FlexBox
+
+  Index 
+  01. Reset CSS
+  02. Header CSS
+  03. Banner CSS
+  04. Payment CSS
+*/
+
+/* 01. Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;1,400;1,500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Plus Jakarta Sans';
+  background-color: rgba(255, 255, 255, 0.80);
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img{
+  max-width: 100%;
+}
+
+/* 02. Header CSS */
+.header {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 30px 30px 0 0;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li a {
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #1D1D1D;
+  padding: 18px 30px;
+  border-radius: 30px;
+  color: #FFF;
+  display: inline-block;
+  margin: 0 15px 0 0;
+  transition: .3s;
+}
+.menu ul li a:hover {
+  background-color: #CBC4DA;
+  color: #000;
+}
+
+/* 03. Banner CSS */
+.banner {
+  background-color: #111;
+  color: #FFF;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.banner-img {
+  flex-basis: 48%;
+}
+.banner-content {
+	flex-basis: 52%;
+}
+.banner-content h1 {
+  font-size: 110px;
+  line-height: 126px;
+  font-weight: 700;
+}
+.banner-bottom {
+  border-left: 2px solid #FFF;
+  padding: 0 40px 0 0;
+  margin: 30px 0 0 0;
+}
+.banner-bottom p {
+  font-size: 16px;
+  margin: 0 0 0 40px;
+  line-height: 28px;
+  font-weight: 500;
+  max-width: 476px;
+}
+.banner-btn {
+  margin: 30px 0 0 0;
+}
+.banner-btn a {
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 0 0 0 40px;
+}
+.banner-bg {
+  background-color: #CBC4DA;
+  border-radius: 30px;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+.banner-border {
+  text-decoration: underline;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+/* 04. Payment CSS */
+.payment {
+  background-color: #111;
+  color: #FFF;
+  border-radius: 30px;
+  padding: 60px 200px;
+  margin: 30px 0 15px 0;
+}
+.payment h2 {
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 60px 0;
+}
+.payment-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: 0 0 30px 0;
+}
+.payment-box {
+	flex-basis: 50%;
+}
+.single-payment-box {
+  position: relative;
+  margin: 20px 0;
+  border-bottom: 1px solid rgba(255,255, 255, 0.1);
+  padding-bottom: 25px;
+  margin-left: 40px;
+}
+.single-payment-box h4 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+}
+.single-payment-box:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+} 
+.single-payment-box p {
+  color: rgba(255, 255, 255, 0.80);
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.single-payment-box.active:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #45E580;
+  left: -40px;
+  top: 0;
+}
+.single-payment-box h5 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  width: 335px;
+}
